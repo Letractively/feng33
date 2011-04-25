@@ -1,0 +1,53 @@
+CSS之透明效果
+filter:alpha(opacity=50); /* IE */ -moz-opacity:0.5; /* Moz + FF */ opacity: 0.5; /* 支持CSS3的浏览器（FF 1.5也支持）*/ 
+
+处理文字隐藏
+font-size:0 // for firefox & opera
+color: transparent; // for webkit
+line-height:0;
+overflow:hidden; // for IE
+
+border-radius
+-webkit-border-radius:4px;
+-moz-border-radius:4px;
+border-radius:4px;
+
+box-shadow x-offset x轴偏移;y-offset y轴偏移;blur 模糊值;color of shadow 阴影颜色
+-webkit-box-shadow: 1px 1px 3px #292929;
+-moz-box-shadow: 1px 1px 3px #292929;
+box-shadow: 1px 1px 3px #292929;
+
+text-shadow参考box-shadow
+
+background-size 重定义背景图像的大小
+-moz-background-size: 100% 100%;
+-o-background-size: 100% 100%;
+-webkit-background-size: 100% 100%;
+background-size: 100% 100%;
+
+text-overflow支持切断容器中的文本，而且也给出了一个省略号的特性...
+-o-text-overflow: ellipsis;
+text-overflow:ellipsis;
+overflow:hidden;
+
+Box Flexible Box Model子元素会占据整个垂直空间。
+display: -moz-box;
+display: -webkit-box;
+display: box;
+
+box-flex 使得元素占据整个空间
+-moz-box-flex: 1;
+-webkit-box-flex: 1;
+box-flex: 1;
+
+Transition 动画效果,转换属性,持续时间,缓动类型
+ul a {
+-webkit-transition: padding .4s;
+-moz-transition: padding .4s;
+-o-transition: padding .4s;
+transition: padding .4s;
+}
+
+a:hover {
+padding-left: 6px;
+}
