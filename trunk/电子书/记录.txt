@@ -1,4 +1,4 @@
-CSS之透明效果
+CSS之透明效果 
 filter:alpha(opacity=50); /* IE */ -moz-opacity:0.5; /* Moz + FF */ opacity: 0.5; /* 支持CSS3的浏览器（FF 1.5也支持）*/ 
 
 处理文字隐藏
