@@ -1,0 +1,35 @@
+body,html{ line-height:24px;margin:0;padding:0;color:#2c2c2c;font-size:12px;font-family:\5B8B\4F53,Arial Narrow,arial,serif;text-align:left;background:#fff url(http://img.autov.com.cn/2011v1/images/body.png) repeat-x;}
+div,p,span,ul,li,input,td,dd,dl,dt,ol,h1,form{ margin:0;padding:0;}
+ul{ list-style:none;}
+.table{ border-collapse:collapse;border-spacing:0;}
+.table th,.table td{ empty-cells:show;}
+input{ font-size:12px;}
+i,em{ font-style:normal;}
+img{ border:none;vertical-align:top;}
+a{ color:#2c2c2;text-decoration:none;}
+a:hover{ color:#f60;text-decoration:underline;}
+.clear,.clear0{ zoom:1;clear:both;overflow:hidden;}
+.clear0{ line-height:0;}
+.zoom1{ zoom:1;}
+.main{ width:990px;margin:0 auto;clear:both;zoom:1;}
+.main:after,.clear:after,.zoom1:after{ height:0;clear: both;content:'.';display: block;visibility:hidden;}
+.dBanner{ zoom:1;}
+.dBanner990{ width:990px;margin:auto;clear:both;}
+.padb10{ padding-bottom:10px;}
+.padt10{ padding-top:10px;}
+.marb10{ margin-bottom:10px;}
+.mart10{ margin-top:10px;}
+.main a,.main #dFoot a{ color:#2c2c2c;}
+.main a:hover,.main #dFoot a:hover{ color:#f60;}
+.red,.red a,a.red{ color:#f00;}
+.red2,.red2 a,a.red2{ color:#b20004;}
+.white,.white a,a.white{ color:#fff;}
+.orange,.orange a,a.orange{ color:#ff4e00;}
+.blue,.blue a,a.blue{ color:#1163a3;}
+.gray,.gray a,a.gray{ color:#888;}
+.yellow,.yellow a,a.yellow{ color:#fff600;}
+.yellow:hover,.yellow a:hover,a.yellow:hover{ color:#fff;}
+.pagination i{ text-align:center;cursor:pointer;display:block-inline;float:left;display:block-inline;overflow:hidden;}
+.contentdiv{ display:none;}
+.hidden{ width:0;height:0;left:0;top:0;z-index:999;position:absolute;}
+.none{ display:none;}
