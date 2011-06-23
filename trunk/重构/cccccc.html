@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+ <head>
+  <title> new document </title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<style type="text/css">
+html, body{padding:0; margin:0; font:12px/1.5 Cambria, Georgia, sans-serif; color:#333; background:#fff;}
+table{border-collapse:collapse;border-spacing:0;width:100%}
+td{padding:3px 6px;border:1px solid #ccc;}
+.select td{background:red;}
+.over{background:#555;}
+.b1 td{background:#b8c0d5;font-size:20px;}
+.b2 td{background:#666;color:#fff;}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script>
+$(document).ready(function(){ 
+$(".abc tr").click(function () {
+      $(".abc tr").each(function(){
+      if($(this).hasClass("select")){
+        $(this).removeClass("select");
+      }});
+      $(this).addClass("select");
+    });
+$(".abc tr").mouseover(function(){$(this).addClass("over")});
+$(".abc tr").mouseout(function(){$(this).removeClass("over")}); 
+$(".abc tr:odd").addClass("b1"); 
+$(".abc tr:even").addClass("b2"); 
+});
+</script>
+</head>
+<body >
+<table class="abc">
+<tr>
+<td>1</td><td>2</td>
+</tr>
+</tr>
+<td>1</td><td>2</td>
+</tr>
+</tr>
+<td>1</td><td>2</td>
+</tr>
+</tr>
+<td>1</td><td>2</td>
+</tr>
+</tr>
+<td>1</td><td>2</td>
+</tr>
+</table>
+<ul>
+<li><input type="checkbox" value="大" />大</li>
+<li><input type="checkbox" value="中" />中</li>
+<li><input type="checkbox" value="小" />小</li>
+</ul>
+<ul>
+<li><input type="checkbox" id="checkbox1" value="大" />
+	<lable for="checkbox1">大</lable></li>
+<li><input type="checkbox" id="checkbox2" value="中" />
+	<lable for="checkbox2">大</lable></li>
+<li><input type="checkbox" id="checkbox3" value="小" />
+	<lable for="checkbox3">大</lable></li>	
+</ul>
+</body>
+</html>
