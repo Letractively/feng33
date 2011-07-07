@@ -13,3 +13,5 @@
 203.208.46.29 lh3.googleusercontent.com 
 203.208.46.29 lh2.googleusercontent.com 
 203.208.46.29 lh1.googleusercontent.com
+
+ubuntu  desktop edition
