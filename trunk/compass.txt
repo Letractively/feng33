@@ -1,0 +1,72 @@
+安装compass
+$ gem update --system
+$ gem install compass
+创建项目
+$ compass create <myproject> --syntax sass
+已有项目
+$ cd <myproject>
+$ compass install compass 
+单个文件
+$ sass --watch style.scss:style.css
+整目录
+$ sass --watch stylesheets/sass:stylesheets/css
+
+更新
+gem update compass compass
+
+
+
+Variables 变量
+Nesting 嵌套
+Mixins混合
+Selector Inheritance选择器继承
+
+
+输出样式时可以使用四种模式
+Nested嵌套
+Expanded展开
+Compact紧凑
+Compressed压缩
+使用方法：
+sass --watch --style expanded/nested/compact
+
+
+https://github.com/oneclick/rubyinstaller/downloads/
+安装解压
+进入解压的目录操作
+cd D:\AppServ\ruby\devkit
+ruby dk.rb init
+ruby dk.rb install
+
+进入ruby的目录里的lib(https://github.com/mockko/livereload)
+gem install eventmachine-win32 win32-changenotify win32-event livereload --platform=ruby
+
+进入项目文件平
+livereload
+可多个项目监控
+livereload /path/to/dir1 /path/to/dir2 /path/to/dir3
+
+
+
+apache安装完切换到apache下目录bin
+httpd -k install
+
+
+conf目录下的httpd.conf下
+    Listen 参数可以改端口
+    DocumentRoot 改host路径
+    <Directory   改host路径
+
+
+
+https://chrome.google.com/extensions/detail/jnihajbhpnppcggbcgedagnkighmdlei
+https://addons.mozilla.org/firefox/addon/livereload/
+https://github.com/downloads/mockko/livereload/LiveReload-1.6.2.safariextz
+
+注:Firefox开启livereload插件需要去about:config
+把network.websocket.override-security-block的值改为true;
+
+
+
+vim :set enc=编码
+http://maxlee.googlecode.com/svn/trunk/Vim/
