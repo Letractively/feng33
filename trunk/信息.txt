@@ -25,3 +25,9 @@ Grid Layout¡¢Flexible Box Layout ¡¢Multi-column Layout
 74.125.39.99 chrome.google.com
 74.125.39.99 clients2.google.com
 74.125.153.138        tools.google.com
+
+199.59.148.84 oauth.twitter.com
+199.59.148.84 twitter.com
+199.59.148.84 www.twitter.com
+199.59.148.84 api.twitter.com
+199.59.148.201 search.twitter.com...
