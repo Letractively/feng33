@@ -18,16 +18,17 @@ ubuntu  desktop edition
 
 Grid Layout、Flexible Box Layout 、Multi-column Layout
 
-64.233.183.139        clients4.google.com
-64.233.183.139        docs.google.com
-64.233.183.138        clients4.google.com
-64.233.183.138        docs.google.com
-74.125.39.99 chrome.google.com
-74.125.39.99 clients2.google.com
-74.125.153.138        tools.google.com
+64.233.183.139 clients4.google.com
+64.233.183.139 docs.google.com
+64.233.183.138 clients4.google.com
+64.233.183.138 docs.google.com
+209.85.225.100 clients4.google.com
+209.85.225.100 docs.google.com
 
 199.59.148.84 oauth.twitter.com
 199.59.148.84 twitter.com
 199.59.148.84 www.twitter.com
 199.59.148.84 api.twitter.com
 199.59.148.201 search.twitter.com...
+
+fiddler类似的工具吗
