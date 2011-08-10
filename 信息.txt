@@ -38,3 +38,6 @@ fiddler类似的工具吗
 9-jhbvq-hc55z-c66jd-8iikq-u38k4
 
 http://maxlee.org/v3/index.shtml
+
+chrome扩展
+JSONView options
