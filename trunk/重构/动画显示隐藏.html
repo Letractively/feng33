@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>jQuery Animation - Toggle </title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function(){            
+            var speed = 500;
+            $(".click").click(function(event)
+            {
+                event.stopPropagation(); 
+                $(".content").toggle(speed);
+
+            });
+			$(".click").click(function(){
+			$(this).toggleClass("red");
+			});
+        });
+    </script>
+<style>
+.main{postion:relative;}
+.area{position:absolute;right:0;top:0}
+.click{float:left;height:40px;background:#ccc;}
+.content{float:left;}
+.red{color:red;}
+.ccc{font-size:18px;}
+
+</style>
+</head>
+<body>
+<div class="main">    
+	<div class="area">
+    <div class="click">点击区</div>
+    <div class="content" style="display:none;">
+       隐藏内容
+    </div> 
+	</div>
+</div>
+</body>
+</html>

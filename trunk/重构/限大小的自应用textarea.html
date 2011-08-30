@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>  
+<html>  
+<head>  
+<meta http-equiv="content-type" content="text/html;charset=gb2312">  
+<title>textarea自适应高度</title>  
+</head>  
+  
+<body>  
+<div id="holder">  
+<textarea id="content" rows="4" style="width:200px;padding:6px;line-height:18px;"></textarea>  
+</div>  
+  
+<script type="text/javascript">  
+(function() {  
+    var isIE = navigator.userAgent.indexOf('MSIE') != -1 && !window.opera;  
+    var holder = G("holder");  
+    var content = G("content");  
+    var min = 4;  
+    var max = 10;  
+    var minH = min * 18;  
+    var maxH = max * 18;
+    function G(id){  
+        return document.getElementById(id);  
+    }  
+    function addEvent(obj, ev, handler){  
+        if(window.attachEvent){  
+            obj.attachEvent("on" + ev, handler);  
+        }else if(window.addEventListener){   
+            obj.addEventListener(ev, handler, false);  
+        }  
+    }  
+    function autoHeight(){  
+        if(!isIE) content.style.height = 0;  
+        var h = content.scrollHeight;  
+        if(h < minH) h = minH;  
+        if(h > maxH){  
+            h = maxH;  
+            content.style.overflowY = "scroll";  
+        }else{  
+            content.style.overflowY = "hidden";  
+        }  
+        content.style.height = h + "px";  
+        holder.style.height = (h + 6) + "px";  
+    }  
+    content.style.height = minH + "px";  
+    holder.style.height = (minH + 6) + "px";  
+    addEvent(content, "keyup", autoHeight);  
+    addEvent(content, "keydown", autoHeight);  
+    addEvent(content, "mouseup", autoHeight);  
+})();  
+</script>  
+</body>  
+</html>  
