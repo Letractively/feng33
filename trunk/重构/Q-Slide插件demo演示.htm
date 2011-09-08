@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0031)http://d2.sodao.com/demo/Slide/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>JQ-Slide插件demo演示</title>
+<script type="text/javascript" src="JQ-Slide插件demo演示_files/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="JQ-Slide插件demo演示_files/jq.Slide.js"></script>
+<link href="JQ-Slide插件demo演示_files/reset.css" rel="stylesheet" type="text/css">
+<link href="JQ-Slide插件demo演示_files/slide.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+$(function(){
+    $("#temp1").Slide({
+		effect : "scroolY",
+    	speed : "normal",
+		timer : 3000
+	});
+	$("#temp2").Slide({
+		effect : "scroolX",
+    	speed : "normal",
+		timer : 3000
+	});	
+	$("#temp3").Slide({
+		effect : "fade",
+    	speed : "normal",
+		timer : 3000
+	});
+	$("#temp4").Slide({
+		effect : "scroolLoop",
+		autoPlay:false,
+    	speed : "normal",
+		timer : 3000,
+		steps:2
+	});
+	$("#temp5").Slide({
+		effect : "scroolTxt",
+    	speed : "normal",
+		timer : 3000,
+		steps:1
+	});
+	$("#temp6").Slide({
+		effect : "scroolY",
+    	speed : "normal",
+		timer : 3000
+	});
+});
+</script>
+<link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script><meta name="chromesniffer" id="chromesniffer_meta" content="jQuery=1.4.2&amp;"><script type="text/javascript" src="chrome-extension://homgcnaoacgigpkkljjjekpignblkeae/detector.js"></script><script>window["_GOOG_TRANS_EXT_VER"] = "1";</script></head>
+<body screen_capture_injected="true">
+<div class="SDemo-title">
+  <h1>JQ-Slide插件demo演示：</h1></div>
+<div id="page"><br>
+<table width="760" border="0" cellspacing="0" cellpadding="0" class="KS-table">
+<caption>
+    JQ-Slide插件参数说明表
+</caption>
+  <tbody><tr>
+    <th width="155" scope="row">参数名</th>
+    <td width="438">参数值(默认值可以省略)</td>
+    <td width="166">&nbsp;</td>
+    </tr>
+  <tr>
+    <th rowspan="5" scope="row">effect </th>
+    <td>scroolY（默认）：垂直滚动</td>
+    <td rowspan="5">&nbsp;</td>
+    </tr>
+  <tr>
+    <td>scroolX：水平滚动</td>
+  </tr>
+  <tr>
+    <td>scroolTxt：文本垂直滚动</td>
+  </tr>
+  <tr>
+    <td>fade：淡出</td>
+  </tr>
+  <tr>
+    <td>scroolLoop：水平左右点击滚动</td>
+  </tr>
+  <tr>
+    <th scope="row">autoPlay</th>
+    <td>true（默认）： or false</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <th scope="row">speed</th>
+    <td>动画速度时间，默认"normal"，可以使用毫秒或者JQ中的fast，slow，normal</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <th scope="row">timer</th>
+    <td>滚动间隔时间，默认"1000，可以使用毫秒或者JQ中的fast，slow，normal</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <th scope="row">claNav</th>
+    <td>JQ-slide-nav（默认）：触点对象数组父级</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <th scope="row">claCon</th>
+    <td>JQ-slide-content（默认）：滚动对象或滚动对象父级</td>
+    <td>&nbsp;</td>
+    </tr>
+  <tr>
+    <th scope="row">steps</th>
+    <td>1（默认）：滚动几个</td>
+    <td>&nbsp;</td>
+    </tr>
+</tbody></table>
+  <br>
+  <hr>
+  <br>
+  <h3>滚动一：</h3>
+  <div id="temp1">
+    <div class="JQ-content-box">
+      <ul class="JQ-slide-content" style="top: -289px; ">
+        <li><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad1.jpg" width="549"></a></li>
+        <li><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad2.jpg" width="549"></a></li>
+        <li><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad3.jpg" width="549"></a></li>
+        <li><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad4.jpg" width="549"></a></li>
+      </ul>
+    </div>
+    <ul class="JQ-slide-nav">
+      <li class=""><a href="http://www.sodao.com/" class="next"><img src="./JQ-Slide插件demo演示_files/guangg1.jpg"></a></li>
+      <li class="on"><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg2.jpg"></a></li>
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg3.jpg"></a></li>
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg4.jpg"></a></li>
+    </ul>
+  </div>
+<pre>$("#temp1").Slide({
+    effect : "scroolY",
+    speed : "normal",
+    timer : 3000
+});
+</pre>
+<hr>
+  <h3>滚动二：</h3>
+  <div id="temp2">
+    <div class="JQ-content-box">
+      <ul class="JQ-slide-content" style="width: 2196px; left: -1647px; ">
+        <li><a href="http://www.sodao.com/" target="_blank">abc</a></li>
+        <li><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad2.jpg" width="549"></a></li>
+        <li><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad3.jpg" width="549"></a></li>
+        <li><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad4.jpg" width="549"></a></li>
+      </ul>
+    </div>
+    <ul class="JQ-slide-nav">
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg1.jpg"></a></li>
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg2.jpg"></a></li>
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg3.jpg"></a></li>
+      <li class="on"><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg4.jpg"></a></li>
+    </ul>
+  </div>
+  <pre>$("#temp2").Slide({
+    effect : "scroolX",
+    speed : "normal",
+    timer : 3000
+});
+</pre>
+<hr>
+  <h3>滚动三：</h3>
+  <div id="temp3">
+    <div class="JQ-content-box">
+      <ul class="JQ-slide-content">
+        <li style="z-index: 0; opacity: 0; "><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad1.jpg" width="549"></a></li>
+        <li style="z-index: 1; opacity: 1; "><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad2.jpg" width="549"></a></li>
+        <li style="z-index: 0; opacity: 0; "><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad3.jpg" width="549"></a></li>
+        <li style="z-index: 0; opacity: 0; "><a href="http://www.sodao.com/" target="_blank"><img height="289" src="./JQ-Slide插件demo演示_files/ad4.jpg" width="549"></a></li>
+      </ul>
+    </div>
+    <ul class="JQ-slide-nav">
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg1.jpg"></a></li>
+      <li class="on"><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg2.jpg"></a></li>
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg3.jpg"></a></li>
+      <li class=""><a href="http://www.sodao.com/"><img src="./JQ-Slide插件demo演示_files/guangg4.jpg"></a></li>
+    </ul>
+  </div>
+  <pre>$("#temp3").Slide({
+	effect : "fade",
+    speed : "normal",
+    timer : 3000
+});
+</pre>
+<hr>
+  <h3>滚动四：</h3>
+  <div id="slide-box"> <b class="corner"></b>
+    <div class="slide-content" id="temp4">
+      <div class="wrap">
+        <ul class="JQ-slide-content" style="width: 2040px; ">
+          <li><a href="http://www.sodao.com/" target="_blank"><img src="./JQ-Slide插件demo演示_files/01.jpg" alt="懒人图库" width="330" height="450"></a></li>
+          <li><a href="http://www.sodao.com/" target="_blank"><img alt="懒人图库" src="./JQ-Slide插件demo演示_files/02.jpg" width="330" height="450"></a></li>
+          <li><a href="http://www.sodao.com/" target="_blank"><img alt="懒人图库" src="./JQ-Slide插件demo演示_files/03.jpg" width="330" height="450"></a></li>
+          <li><a href="http://www.sodao.com/" target="_blank"><img alt="懒人图库" src="./JQ-Slide插件demo演示_files/04.jpg" width="330" height="450"></a></li>
+          <li><a href="http://www.sodao.com/" target="_blank"><img alt="懒人图库" src="./JQ-Slide插件demo演示_files/05.jpg" width="330" height="450"></a></li>
+          <li><a href="http://www.sodao.com/" target="_blank"><img alt="懒人图库" src="./JQ-Slide插件demo演示_files/06.jpg" width="330" height="450"></a></li>
+        </ul>
+      </div>
+      <div class="JQ-slide-nav"> <a class="prev" href="http://d2.sodao.com/demo/Slide/#"> <b class="corner"></b><span>‹</span><b class="corner"></b></a> <a class="next" href="http://d2.sodao.com/demo/Slide/#"> <b class="corner"></b><span>›</span><b class="corner"></b></a> </div>
+    </div>
+    <b class="corner"></b> </div>
+  <pre>$("#temp4").Slide({
+    effect : "scroolLoop",
+    autoPlay:false,
+    speed : "normal",
+    timer : 3000,
+    steps:2
+});
+</pre>
+<hr>
+  <h3>滚动五：</h3>
+  <div id="temp5">
+    <div class="JQ-content-box">
+      <ul class="JQ-slide-content" style="margin-top: 0px; ">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+      <li>这是公告标题的第12行</li><li>这是公告标题的第一行</li><li>这是公告标题的第二行</li><li>这是公告标题的第三行</li><li>这是公告标题的第四行</li><li>这是公告标题的第五行</li><li>这是公告标题的第六行</li><li>这是公告标题的第七行</li><li>这是公告标题的第八行</li><li>这是公告标题的第9行</li><li>这是公告标题的第10行</li><li>这是公告标题的第11行</li></ul>
+    </div>
+  </div>
+  <pre>$("#temp5").Slide({
+    effect : "scroolTxt",
+    speed : "normal",
+    timer : 3000,
+    steps:1
+});
+</pre>
+<hr>
+  <h3>滚动六：</h3>
+  <div id="temp6">
+    <div class="JQ-content-box">
+      <ul class="JQ-slide-content" style="top: -288px; ">
+        <li> <a href="http://www.sodao.com/huangye/KuaiSoPropaganda" target="_blank"><img height="144" alt="" title="" src="./JQ-Slide插件demo演示_files/g5.jpg" width="710"></a> </li>
+        <li> <a href="http://www.sodao.com/zone/100000056" target="_blank"><img height="144" alt="" title="" src="./JQ-Slide插件demo演示_files/20100820-284f62ce01db688e.jpg" width="710"></a> </li>
+        <li> <a href="http://www.sodao.com/zone/100000049" target="_blank"><img height="144" alt="" title="" src="./JQ-Slide插件demo演示_files/g1.jpg" width="710"></a> </li>
+      </ul>
+      <ul class="JQ-slide-nav">
+        <li class="">1</li>
+        <li class="">2</li>
+        <li class="on">3</li>
+      </ul>
+    </div>
+  </div>
+  <pre>$("#temp6").Slide({
+    effect : "scroolY",
+    speed : "normal",
+    timer : 3000
+});
+</pre>
+</div>
+
+
+<div id="window-resizer-tooltip" style="display: block; "><a href="http://d2.sodao.com/demo/Slide/#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png); "></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1448</span> x <span class="tooltipHeight" id="winHeight">878</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1440</span> x <span class="tooltipHeight" id="vpHeight">740</span></div></body></html>
