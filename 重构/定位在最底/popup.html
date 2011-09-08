@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script language="javascript" type="text/javascript" src="http://fuwu.wlstock.com/Js/jquery-1.2.6.min.js"></script>
+<script language="javascript" type="text/javascript" src="http://fuwu.wlstock.com/Js/validateFormUtil.js"></script>
+<script type="text/javascript" src="http://fuwu.wlstock.com/Js/RegisterUtilsAD.js"></script>
+<style type="text/css">
+body,table,html{padding:0;margin:0;font:12px/1.5 宋体;color:#000}
+html,body{ _height:100%; _overflow:hidden;}
+body{ _overflow:auto;}
+#poput{ width:270px; position:fixed; _position:absolute; background:#eee; right:0px;}
+#poput{bottom:0;}
+a { text-decoration:none; color:#049}
+a:hover {text-decoration:underline}
+p {padding:6px 6px; margin:0; font-size:12px}
+.white { color:#fff}
+.white a {color:#fff}
+.red {color:#c60000;}
+.red a {color:#c60000;}
+.green {color:#196e03;}
+.green a {color:#196e03;}
+.so_out02 { width:60px; height:20px; background:url(images/btn_normal.gif) no-repeat; border:0;line-height:20px; text-align:center; font-size:12px; color:#f60}
+.so_on02 { width:60px; height:20px; background:url(images/btn_normal.gif) no-repeat center bottom; border:0;line-height:20px;text-align:center;font-size:12px; color:#049}
+.stocks td { line-height:24px; font-size:12px; text-align:center}
+.stocks .title { color:#666}
+.popclose{display:none;}
+</style>
+<script>
+$(document).ready(function(){
+	$(popclose).click(function(){
+	$(poput).addClass("popclose");
+});
+});
+</script>
+<script language="javascript">
+for(i=0;i<100;i++){
+	document.write(i+"<br />");
+}
+</script>
+</head>
+<body>
+<div id="content">
+
+</div>
+<div id="poput"><table width="270" border="0"  cellpadding="0" cellspacing="0">
+  <tr>
+    <td style="background:url(images/top.gif) no-repeat top center; height:31px"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+       <td height="31" style="padding:0 0 0 6px"><img src="images/toptit.gif" width="200" height="20" /></td>
+        <td><a href="javascript:window.parent.closediv()" class="white">×关闭</a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td style="background:url(images/fill.gif) repeat-y center"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+         <td>
+         <table width="100%" border="0" cellspacing="0" cellpadding="0" class="stocks">
+  <tr>
+    <td class="title">股票名称</td>
+    <td class="title">资金流出</td>
+    <td class="title">阶段跌幅</td>
+    </tr>
+  <tr>
+    <td><a href="http://hudong.wlstock.com/StockBar/000821.aspx" target="_blank">京山轻机</a></td>
+    <td>1013万</td>
+    <td class="green">-12.19%</td>
+    </tr>
+  <tr>
+    <td><a href="http://hudong.wlstock.com/StockBar/600698.aspx" target="_blank">*ST轻骑</a></td>
+    <td>2078万</td>
+    <td class="green">-9.78%</td>
+    </tr>
+  <tr>
+    <td><a href="http://hudong.wlstock.com/StockBar/600770.aspx" target="_blank">综艺股份</a></td>
+    <td>7963万</td>
+    <td class="green">-8.56%</td>
+    </tr>
+</table>
+<p class="red">好股道：上攻明显乏力，69只弱势股须果断出局</p>
+         </td>
+        </tr>
+      <tr>
+        <td><table width="260" border="0" align="center" cellpadding="0" cellspacing="0">
+      
+       <tr>
+        <td height="26" valign="middle" align="right">手机:<input ID="Mobile" style="border:#ccc solid 1px;height:16px; color:#1B69AC;" size="6" maxlength="11" /></td>
+        <td valign="middle">姓名:<input id="Name"  style="border:#ccc solid 1px;height:16px; color:#1B69AC" size="3" maxlength="8" /></td>
+        <td width="60" align="center"><input type="button" value="免费询"  style="cursor:pointer"  class="so_out02" onmouseover="this.className='so_on02'" onmouseout="this.className='so_out02'" id="btnStockKeyword" tabindex="4" onclick="RegisterUtilsAD.sendRegisterRequest('OE网弹窗','Mobile','Name','')" /></td>
+      </tr>
+    </table></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td height="6"><img src="images/bottom.gif" width="270" height="6" /></td>
+  </tr>
+</table></div>
+</body>
+</html>
