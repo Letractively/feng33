@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>jQuery Animation - Toggle </title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+ var speed = 500;
+  $(".area").delay(2000).animate({top: '+0'},1000,function(){
+  $(this).hide(speed);
+});
+
+});
+</script> 
+	
+<style>
+
+
+</style>
+</head>
+<body>
+<div class="main">    
+	<div class="area">
+		<img src="ccc.jpg" />
+	</div>cccc
+</div>
+</body>
+</html>
