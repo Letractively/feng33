@@ -15,6 +15,11 @@ $ sass --watch stylesheets/sass:stylesheets/css
 gem update compass compass
 
 
+compass 用法
+创建 compass creat pjname
+监控 compass watch pjname
+刷新 livereload
+
 
 Variables 变量
 Nesting 嵌套
