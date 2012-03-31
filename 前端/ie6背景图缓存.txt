@@ -1,0 +1,5 @@
+<!¨C[if IE 6]>  
+<script type=¡±text/javascript¡±>  
+document.execCommand(¡±BackgroundImageCache¡±, false, true);   
+</script>  
+<![endif]¨C>  
