@@ -1,0 +1,6 @@
+html {
+zoom: expression(function(ele){
+ele.style.zoom = "1";
+document.execCommand("BackgroundImageCache", false, true);
+}(this));
+}
